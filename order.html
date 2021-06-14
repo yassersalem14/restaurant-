@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order</title>
+    <link href="formCss.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Product Order Form</h2>
+        </div>
+        <div class="d-flex">
+            <form action="" method="">
+                <label>
+                    <span class="fname">First Name <span class="required">*</span></span>
+                    <input type="text" name="fname">
+                </label>
+                <label>
+                    <span class="lname">Last Name <span class="required">*</span></span>
+                    <input type="text" name="lname">
+                </label>
+
+
+                <label>
+                    <span>Street Address <span class="required">*</span></span>
+                    <input type="text" name="houseadd" placeholder="House number and street name" required>
+                </label>
+
+                <label>
+                    <span>Town / City <span class="required">*</span></span>
+                    <input type="text" name="city">
+                </label>
+
+                <label>
+                    <span>Phone <span class="required">*</span></span>
+                    <input type="tel" name="city">
+                </label>
+
+                <label>
+                    <span>Email Address <span class="required">*</span></span>
+                    <input type="email" name="city">
+                </label>
+
+                <label>
+                    <span>Choose Your Order <span class="required">*</span></span>
+                    <select id="selectList" name="Choices" size="6" style="height: fit-content;" multiple required>
+                        <option id="OldiesAttack" value="OldiesAttack">Oldies Attack</option>
+                        <option id="GrilledChicken" value="GrilledChicken">Grilled Chicken</option>
+                        <option id="SmokeyChicken" value="SmokeyChicken">Smokey Chicken</option>
+                        <option id="ChickenCaramellized" value="ChickenCaramellized">Chicken Caramellized</option>
+                        <option id="Colorado" value="Colorado">Colorado</option>
+                        <option id="Marselia" value="Marselia">Marselia</option>
+                        <option id="BBQChickenPizza" value="BBQChickenPizza">BBQ Chicken Pizza</option>
+                        <option id="CheeseLoversPizza" value="CheeseLoversPizza">Cheese Lovers Pizza</option>
+                        <option id="HotDogPizza" value="HotDogPizza">Hot Dog Pizza</option>
+                        <option id="SeafoodPizza" value="SeafoodPizza">Seafood Pizza</option>
+                        <option id="MixChickenPizza" value="MixChickenPizza">Mix Chicken Pizza</option>
+                        <option id="SuperSupremePizza" value="SuperSupremePizza">Super Supreme Pizza</option>
+                        <option id="JuicyLusy" value="JuicyLusy">Juicy Lusy</option>
+                        <option id="Mafia" value="Mafia">Mafia</option>
+                        <option id="Caramelo" value="Caramelo">Caramelo</option>
+                        <option id="Galadtor" value="Galadtor">Galadtor</option>
+                        <option id="Brisket" value="Brisket">Brisket</option>
+                        <option id="Milanu" value="Milanu">Milanu</option>
+                    </select>
+                    <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+                </label>
+                <!-- <button onclick="Order()" class="button-style">Done</button> -->
+                <button onclick="myFunction()" class="button-style">Done</button>
+
+            </form>
+            <div class="Yorder">
+                <h2 style="color: rgb(21, 138, 138); ">Your order</h2>
+                <table>
+                    <tr id="product">
+                        <th>Product Names</th>
+                    </tr>
+                    <tr id="cost">
+                        <th>Total Cost</th>
+                        <td></td>
+                    </tr>
+                </table><br>
+                <div>
+                    <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+                </div>
+                <p>
+                    Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                    Your order will not be shipped until the funds have cleared in our account.
+                </p>
+                <div>
+                    <input type="radio" name="dbt" value="cd"> Cash on Delivery
+                </div>
+                <div>
+                    <input type="radio" name="dbt" value="cd"> Paypal <span>
+                        <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg"
+                            alt="" width="50">
+                    </span>
+                </div>
+                <button type="button">Place Order</button>
+            </div>
+        </div>
+    </div>
+    <script src="order.js"></script>
+</body>
+
+</html>
